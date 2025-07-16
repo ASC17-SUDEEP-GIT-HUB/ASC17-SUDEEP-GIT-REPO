@@ -27,8 +27,6 @@ public class BookingManager {
                 found = true;
             }
         }
-
-
 //        String a = "abc";
 //        String date = "2025-07-08";
 
