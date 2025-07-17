@@ -25,4 +25,5 @@ public class Booking {
     public String getDetails() {
         return "Booking for " + employeeId + " in " + room.getRoomDetails() + " for " + durationInMinutes + "mins.";
     }
+
 }
