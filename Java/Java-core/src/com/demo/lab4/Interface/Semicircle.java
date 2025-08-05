@@ -1,4 +1,6 @@
 package com.demo.lab4.Interface;
+
+import com.demo.lab4.Interface.Circle;
 //
 //public class Semicircle implements Color {
 //
@@ -28,17 +30,20 @@ public class Semicircle extends Circle implements Shape, Color {
 
     }
 
+   // super(periCircle, areaCircle);
+
    // Circle circle = new Circle();
 
     @Override
     public void perimeterOfShape() {
-
-        System.out.println("Perimeter of semicircle : " + periCircle  / 2);
+        super.perimeterOfShape();
+        System.out.println("Perimeter of semicircle : " + getPerimeter()  / 2);
     }
 
     @Override
     public void areaOfShape() {
-        System.out.println("Area of semicircle: " + areaCircle / 2);
+        super.areaOfShape();
+         System.out.println("Area of semicircle: " + getArea() / 2);
     }
 
     @Override
@@ -50,5 +55,4 @@ public class Semicircle extends Circle implements Shape, Color {
     public void shapeColor() {
         System.out.println("The color of shape is : " + color);
     }
-
 }

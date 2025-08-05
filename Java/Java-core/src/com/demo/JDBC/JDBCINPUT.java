@@ -21,7 +21,7 @@ public class JDBCINPUT {
             System.out.println("Connection established!!");
 
            // Statement statement = connection.createStatement();
-            System.out.println("Enter id, name, hobbies: ");
+            System.out.println("Enter id, name, hobbies, email: ");
             int id = sc.nextInt();
             sc.nextLine();
 
@@ -32,7 +32,7 @@ public class JDBCINPUT {
             String email = sc.nextLine();
 
             String sql = "Insert into friends(id, name, hobbies, email) values(?, ?, ?, ?)";
-
+ 
            PreparedStatement ps = connection.prepareStatement(sql);
 
            ps.setInt(1, id);
@@ -45,7 +45,7 @@ public class JDBCINPUT {
            if(insertDetails > 0) {
                System.out.println("Successfull!");
            }
-        }
+        } 
 
         catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();

@@ -16,12 +16,20 @@ public class Main {
 
         semicircle.areaOfShape();
         semicircle.perimeterOfShape();
+        semicircle.borderColor();
+        semicircle.shapeColor();
 
         Triangle triangle =  new Triangle();
 
         triangle.areaOfShape();
         triangle.perimeterOfShape();
 
+        Shape shape;
+        shape = new Triangle();
 
+        shape.areaOfShape();
+        shape.perimeterOfShape();
+
+        
     }
 }

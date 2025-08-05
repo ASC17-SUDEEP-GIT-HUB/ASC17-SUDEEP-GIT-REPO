@@ -1,4 +1,4 @@
-Create database myFriendDB;
+ BETWEENCreate database myFriendDB;
 
 use myFriendDB;
 

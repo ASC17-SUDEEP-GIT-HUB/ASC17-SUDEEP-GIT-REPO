@@ -2,12 +2,12 @@ package com.demo.lab4.Interface;
 
 public class Circle implements Color {
 
-    double periCircle;
-    double areaCircle;
+    private double periCircle;
+    private double areaCircle;
 
-    Circle() {
-
-    }
+//    Circle() {
+//
+//    }
 
    // @Override
     public void perimeterOfShape() {
@@ -18,12 +18,20 @@ public class Circle implements Color {
 
     }
 
+    public double getPerimeter() {
+        return periCircle;
+    }
+
     //@Override
     public void areaOfShape() {
         areaCircle = pie * radius * radius;
 
      //   System.out.println("Perimeter of the Circle: ");
         System.out.println("The area of circle is: " + areaCircle);
+    }
+
+    public double getArea() {
+        return areaCircle;
     }
    // @Override
     public void borderColor() {

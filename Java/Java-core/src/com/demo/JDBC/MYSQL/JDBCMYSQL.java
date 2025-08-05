@@ -1,19 +1,20 @@
-package com.demo.JDBC;
+package com.demo.JDBC.MYSQL;
 
 import java.sql.*;
 
-public class JDBCSelectStatement {
+public class JDBCMYSQL {
 
     public static void main(String[] args) throws ClassNotFoundException {
 
         Connection connection = null;
 
         try {
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("Driver Loaded!!");
 
-            String url = "jdbc:sqlserver://localhost:1433;databaseName=myFriendDB;user=sa;password=sqlserver;trustServerCertificate=true;";
+            String url = ("jdbc:mysql://127.0.0.1:3306/myfriendDB?user=root&password=mysql");
 
+            //     connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1/myfriendDB", "root", "mysql");
 
             connection = DriverManager.getConnection(url);
             System.out.println("Connection established!!");
